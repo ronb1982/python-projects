@@ -134,3 +134,6 @@ STATICFILES_DIRS = [STATIC_DIR,]
 # Media (media uploaded by users)
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+# Login
+LOGIN_URL = '/basic_app/user_login'
