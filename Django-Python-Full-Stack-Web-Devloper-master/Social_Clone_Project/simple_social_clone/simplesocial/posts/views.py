@@ -60,7 +60,7 @@ class CreatePost(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
     #     kwargs.update({"user": self.request.user})
     #     return kwargs
 
-    def form_valid(self, form):
+    def form_valid(self,form):
         self.object = form.save(commit=False)
         self.object.user = self.request.user
         self.object.save()
